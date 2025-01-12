@@ -116,11 +116,11 @@ export const {
   clearCategories 
 } = mediaSlice.actions;
 
-export const selectAllMedia = (state: { media: ApplicationState }) => state.media.media.items;
-export const selectMediaStatus = (state: { media: MediaState }) => state.media.status;
-export const selectMediaError = (state: { media: ApplicationState }) => state.media.media.error;
-export const selectSelectedCategories = (state: { media: ApplicationState }) => 
-  state.media.media.selectedCategories;
+export const selectAllMedia = (state: ApplicationState ) => state.media.items;
+export const selectMediaStatus = (state: ApplicationState ) => state.media.status;
+export const selectMediaError = (state: ApplicationState) => state.media.error;
+export const selectSelectedCategories = (state: ApplicationState) => 
+  state.media.selectedCategories;
 
 export const selectFilteredMedia = (state: { media: MediaState }): MediaItem[] => {
   const { items, selectedCategories } = state.media;

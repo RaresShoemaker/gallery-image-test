@@ -14,9 +14,6 @@ const HomePage: FC = () => {
 		}
 	}, [status, dispatch]);
 
-	console.log('Media Status:', status);
-	console.log('Media Items:', media);
-
 	return (
 		<div className='py-8'>
 			<h1 className='text-4xl font-bold text-white mb-8'>Welcome to Gallery</h1>
