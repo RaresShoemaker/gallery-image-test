@@ -1,9 +1,3 @@
-export interface MediaFile {
-  __type: 'File';
-  name: string;
-  url: string;
-}
-
 export interface MediaItem {
   objectId: string;
   category: string[];
